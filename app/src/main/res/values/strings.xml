@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Dinas PUPR</string>
+
+    <string name="title_activity_berita">berita</string>
+    <string name="type_name">Type Name</string>
+    <string name="title_activity_news">news</string>
+    <string name="title_home">Semua Posting</string>
+    <string name="home">Home</string>
+    <string name="title_dashboard">Home</string>
+    <string-array name="spinner_array">
+        <item>Sortir Data</item>
+        <item>Menunggu </item>
+        <item>Proses</item>
+        <item>Selesai</item>
+
+
+    </string-array>
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="back">Kembali</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_image">Add Image</string>
+    <string name="title_activity_display_image">DisplayImage</string>
+    <string name="image_information">Image Information</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_all">Semua Postingan</string>
+    <string name="title_activity_proses">Proses Perbaikan</string>
+    <string name="title_activity_selesai">Selesai Perbaikan</string>
+    <string name="title_notifications">Home</string>
+    <string name="title_post">Posting Usulan</string>
+    <string name="title_activity_proses_perbaikan">proses_perbaikan</string>
+    <string name="title_activity_selesai_perbaikan">selesai_perbaikan</string>
+
+</resources>

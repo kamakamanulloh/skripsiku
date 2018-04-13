@@ -1,0 +1,48 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    android:padding="35dip"
+    android:gravity="center_vertical"
+    >
+
+    <Button
+
+        android:id="@+id/all"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+
+        android:background="@drawable/gb_selector_2"
+        android:text="Semua Usulan"
+        android:textColor="#ffffff"
+        android:textSize="20dip" />
+
+    <Button
+
+        android:id="@+id/proses"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/gb_selector_2"
+
+        android:text="Proses Perbaikan"
+        android:textColor="#ffffff"
+        android:textSize="20dip"
+        android:layout_marginBottom="10dip"
+        />
+
+    <Button
+
+        android:id="@+id/selesai"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/gb_selector_2"
+
+        android:text="Selesai Perbaikan"
+        android:textColor="#ffffff"
+        android:textSize="20dip"
+        />
+
+</LinearLayout>

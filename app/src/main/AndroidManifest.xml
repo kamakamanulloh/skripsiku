@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kamak.skripsweetnewwes">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:name="com.kamak.skripsweetnewwes.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:noHistory = "true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.kamak.skripsweetnewwes.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.upload"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.kamak.skripsweetnewwes.profil" />
+        <activity
+            android:name="com.kamak.skripsweetnewwes.post_review"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.kamak.skripsweetnewwes.newsuser"
+            android:parentActivityName="com.kamak.skripsweetnewwes.MainActivity"
+            android:noHistory = "true">
+
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kamak.skripsweetnewwes.MainActivity"
+                />
+        </activity>
+        <activity android:name="com.kamak.skripsweetnewwes.detailnewsuser"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.reviewnews"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.proses"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.lvkomentar"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.berita"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.all"
+            android:label="@string/title_activity_all"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.proses_perbaikan"
+            android:label="@string/title_activity_proses_perbaikan"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.selesai_perbaikan"
+            android:label="@string/title_activity_selesai_perbaikan"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.View"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.beritasaya"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.kirim"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.home"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.DetailNews"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.dasar"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.petunjuk"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.profil_user"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.login" />
+        <activity android:name="com.kamak.skripsweetnewwes.menu_activity"
+            android:noHistory = "true"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="com.kamak.skripsweetnewwes.editprofil"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.selectimage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:noHistory = "true"/>
+        <activity
+            android:name="com.kamak.skripsweetnewwes.foto"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name="com.kamak.skripsweetnewwes.draft"
+            />
+        <activity android:name="com.kamak.skripsweetnewwes.koment"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.lvmynews"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.komentar"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.lvkomentarnew"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.fotokomen"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.komentargambar"
+            android:noHistory = "true"/>
+        <activity android:name="com.kamak.skripsweetnewwes.detailnews2"></activity>
+    </application>
+
+
+</manifest>
